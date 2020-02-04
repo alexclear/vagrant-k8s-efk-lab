@@ -1,0 +1,14 @@
+- import_playbook: ./kubespray/cluster.yml
+
+- hosts: kube1
+  become: true
+  vars:
+    - k8s_namespace: "efk"
+    - elasticsearch_helm_release: "efk"
+  roles:
+    - role: helm
+    - role: k8s-namespace
+    - role: k8s-rancher-local-path-provisioner
+    - role: k8s-elasticsearch-cluster
+    - { role: k8s-fluentd-elasticsearch, fluentd_elasticsearch_helm_release: "fluentd" }
+    - { role: k8s-kibana, kibana_helm_release: "kibana" }
