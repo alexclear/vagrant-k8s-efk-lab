@@ -7,9 +7,9 @@
 - src: https://github.com/kofonfor/ansible-role-k8s-elasticsearch-cluster.git
   version: 027a6cfa0c5ba17f03c9f430d5d91e52e3769b99
   name: k8s-elasticsearch-cluster
-- src: https://github.com/kofonfor/ansible-role-k8s-fluentd-elasticsearch.git
-  version: 99e830a46e2e4a9f6a6df8c10db7571fadd97564
-  name: k8s-fluentd-elasticsearch
+- src: https://github.com/kofonfor/ansible-role-k8s-filebeat.git
+  version: b87bdf701fed8a2101582bc8e155b549be88d707
+  name: k8s-filebeat
 - src: https://github.com/kofonfor/ansible-role-k8s-kibana.git
   version: 85f6d9536c1eaac7d497891b1db216238d727fc0
   name: k8s-kibana
